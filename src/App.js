@@ -1,12 +1,22 @@
 import React from 'react';
+import {Switch, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-function App () {
-  return (
-    <h1>
-      hello from app
+import Routes from './routes';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import SideCart from './components/SideCart';
+import Sidebar from './components/Sidebar';
 
-    </h1>
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Sidebar />
+      <SideCart />
+      <Routes />
+      <Footer />
+    </>
   );
 }
 
